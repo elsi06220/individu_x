@@ -24,13 +24,13 @@ const Hero = () => {
       href: "https://t.me/+rL94lbUQVoU5YTBk", 
       color: "white", 
       outline: true, 
-      label: "Telegram" // Ajouté
+      label: "Telegram" 
     },
     { 
       icon: <X size={24} />, 
       href: "", 
       color: "white", 
-      label: "X (Twitter)" // Ajouté
+      label: "X (Twitter)" 
     },
   ];
 
@@ -99,7 +99,7 @@ const Hero = () => {
               style={{
                 color: link.color,
               }}
-              aria-label={link.label} // Utilisation de `label`
+              aria-label={link.label}
             >
               <div
                 className={`absolute inset-0 w-full h-full rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
@@ -127,12 +127,12 @@ const Hero = () => {
 
       {/* GIF on the Right */}
       <div className="w-1/2 flex justify-center pr-8">
-        <div align="right">
+        <div style={{ textAlign: "right" }}> {/* Correction ici */}
           <img 
             src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" 
             alt="Hacker Anime GIF" 
-            width="550"  // Slightly larger size
-            style={{ maxWidth: "100%", height: "auto" }} // Makes GIF responsive
+            width="550"
+            style={{ maxWidth: "100%", height: "auto" }}
           />
         </div>
       </div>
