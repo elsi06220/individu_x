@@ -43,9 +43,9 @@ export default function Contact() {
           className="max-w-3xl mx-auto text-center"
         >
           <h2 className="text-4xl lg:text-5xl font-extrabold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
-            Contact Me
+            Contactez Moi
           </h2>
-          <p className="text-gray-300 mb-12">I'd love to hear from you! Feel free to reach out via the form below or connect with me on social media.</p>
+          <p className="text-gray-300 mb-12"> </p>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
@@ -59,7 +59,7 @@ export default function Contact() {
           >
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-2">
-                Name
+                Nom
               </label>
               <input
                 type="text"
@@ -107,7 +107,7 @@ export default function Contact() {
               className="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-lg transition-colors flex items-center justify-center gap-2"
             >
               <Send className="w-5 h-5" />
-              <span>Send Message</span>
+              <span>Envoyez</span>
             </button>
 
             {status && <p className="mt-4 text-center text-sm text-gray-300">{status}</p>}

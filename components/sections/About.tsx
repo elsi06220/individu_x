@@ -1,7 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Shield, Target, Brain } from "lucide-react";
+import { Shield, Target, Brain, } from "lucide-react";
+import { SiHiveBlockchain, } from "react-icons/si";
+import { FaIdBadge } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -49,7 +51,7 @@ export default function About() {
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
-            About Me
+            Découvrez
           </motion.h2>
 
           <motion.p
@@ -58,29 +60,28 @@ export default function About() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            I'm passionate about advanced red teaming, zero-day exploit
-            development, and AI. My focus lies in crafting custom exploitation
-            frameworks and innovative cybersecurity solutions. Currently, I'm
-            diving deep into AI, creating systems from scratch to assist hackers
-            without relying on existing tools or APIs.
+           Passionnés par le monde qui nous entoure, je décide de mettre a profit mes connaissance
+           afin de regrouper des personnes qui ont la meme ambition que moi. La géopolitique, les crypto-monnaies 
+           ou bien le numérique en général sont des axes importants à matriser, 
+           celui qui les comprend aujourd'hui est le gagnant de demain ! 
           </motion.p>
 
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             {[ 
               {
-                icon: <Shield className="w-12 h-12 mx-auto text-gradient" />,
-                title: "Security Expert",
-                description: "Specialized in advanced penetration testing and red teaming.",
+                icon: <FaIdBadge className="w-10 h-10 mx-auto text-gradient" />,
+                title: "Politique",
+                description: "Informations en temp et en heure avec des source fiables",
               },
               {
-                icon: <Target className="w-12 h-12 mx-auto text-gradient" />,
-                title: "Exploit Developer",
-                description: "Creating zero-day exploits and custom security tools.",
+                icon: <SiHiveBlockchain  className="w-12 h-12 mx-auto text-gradient" />,
+                title: "Crypto",
+                description: "Tous les actus crypto et les pépites à dénicher ici",
               },
               {
                 icon: <Brain className="w-12 h-12 mx-auto text-gradient" />,
-                title: "AI Innovator",
-                description: "Building AI systems for advanced security applications.",
+                title: "IA Innovation",
+                description: "Tous les outils IA nécessaires avec les bon tips ",
               },
             ].map((item, index) => (
               <motion.div

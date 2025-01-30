@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Github, Linkedin, Instagram, Facebook, X } from "lucide-react";
+import { Github, Linkedin, Instagram, Facebook, X,  } from "lucide-react";
+import { FaTelegram } from "react-icons/fa";
 
 const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -9,22 +10,21 @@ const Hero = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(150);
   const toRotate = [
-    "Cybersecurity Enthusiast",
-    "App Developer",
-    "Web Developer",
-    "Blockchain Developer",
-    "AI/ML Enthusiast",
-    "Red Team Expert",
-    "Malware Developer",
+    "Open your eyes ",
+    "Monde Digital ",
+    "Géopolitique ",
+    "IA ",
+    "Blockchain ",
+   
   ];
   const period = 2000;
 
   const socialLinks = [
-    { icon: <Github />, href: "https://github.com/kokatesaurabh", color: "white", outline: true },
-    { icon: <Linkedin />, href: "https://www.linkedin.com/in/saurabh-kokate-b839b921a", color: "#0e76a8" },
-    { icon: <X />, href: "https://x.com/SaurabhKokate20", color: "white" },
-    { icon: <Instagram />, href: "https://www.instagram.com/0day.xploit_101", color: "#C13584" },
-    { icon: <Facebook />, href: "https://www.facebook.com/share/A8tKsYm5D3DDvP1V", color: "#1877F2" },
+
+    { icon: <FaTelegram size={24} />, href: "https://t.me/+rL94lbUQVoU5YTBk", color: "white", outline: true },
+
+    { icon: <X size={24} />, href: "", color: "white" },
+  
   ];
 
   useEffect(() => {
@@ -68,7 +68,7 @@ const Hero = () => {
       <div className="relative z-10 text-left px-8 md:px-16 w-1/2">
         <h1 className="text-5xl md:text-7xl font-bold mb-4">
           <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-purple-600 bg-clip-text text-transparent">
-            Saurabh Kokate
+            X_Empire
           </span>
         </h1>
         <h2 className="text-2xl md:text-3xl text-gray-200 mb-4">
@@ -78,15 +78,15 @@ const Hero = () => {
           </span>
         </h2>
         <p className="text-lg text-gray-300 max-w-lg mb-8">
-          Specializing in advanced red teaming, zero-day exploit development,
-          AI-driven security solutions, and more.
+          Axez sur le numérique laissez nous vous diriger vers l'actualité 100%
+          authentique et vers des opportunités sans précédents 
         </p>
-        <button
+        {/* <button
           onClick={() => console.log("Connect")}
           className="px-6 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:scale-105 transition-transform"
         >
           Let’s Connect
-        </button>
+        </button> */}
         <div className="flex mt-6 space-x-6">
           {socialLinks.map((link, index) => (
             <a

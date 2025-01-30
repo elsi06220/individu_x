@@ -5,40 +5,27 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "MAK-75-Framework",
+    title: "Flyer",
     description:
-      "The most advanced keylogger framework for multi-platform real-time keystroke monitoring, featuring a 0day activation mode.",
-    github: "https://github.com/kokatesaurabh/MAK-75-Framework",
-    tags: ["Python", "C++", "Cybersecurity", "Multi-Platform"],
+      "Boostez votre audience en présentant votre flyer fait sur mesure, qui ne manquera pas de faire effet",
+     github: "https://github.com/kokatesaurabh/MAK-75-Framework", 
+    tags: ["Figma", "Coolors"],
   },
   {
-    title: "Cyber-Jarvis",
+    title: "Vidéo-montage",
     description:
-      "AI-powered real-time assistant for hackers, designed to handle large datasets and optimize cybersecurity workflows.",
+      "Une présentation de votre activité, clair net et précis regroupez dans une vidéo.",
     github: "https://github.com/kokatesaurabh/Cyber-Jarvis",
-    tags: ["AI", "Machine Learning", "Python", "Cybersecurity"],
+    tags: ["Capcut", "Filmora", ],
   },
-  {
-    title: "VulnHawk",
+   {
+    title: "Site clé en main",
     description:
-      "A comprehensive vulnerability scanner and exploitation tool for uncovering and mitigating system vulnerabilities.",
+      "choissisez votre format de site, que sa soit un site vitrine ou e-commerce",
     github: "https://github.com/kokatesaurabh/VulnHawk-The-Ultimate-Static-Analysis-Framework.git",
-    tags: ["Security", "Python", "Automation", "Static Analysis"],
-  },
-  {
-    title: "D3scord",
-    description:
-      "Web3-based Discord clone built on blockchain technology for secure and decentralized communication.",
-    github: "https://github.com/kokatesaurabh/D3scord",
-    tags: ["Blockchain", "Web3", "Decentralization"],
-  },
-  {
-    title: "Reverse Shell",
-    description:
-      "A customizable reverse shell script for secure remote access, tailored for penetration testers and red teams.",
-    github: "https://github.com/kokatesaurabh/reverse-shell",
-    tags: ["Networking", "Python", "Security"],
-  },
+    tags: ["Wordpress", "React", "Laravel" ],
+  }, 
+  
 ];
 
 export default function Projects() {
@@ -62,7 +49,7 @@ export default function Projects() {
         >
           {/* Title with Hybrid Gradient */}
           <h2 className="text-5xl font-extrabold mb-16 text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-black">
-            🚀 My Projects
+            🚀 Services
           </h2>
 
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -91,7 +78,7 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
-                  <div className="flex items-center space-x-4">
+                 {/*  <div className="flex items-center space-x-4">
                     <a
                       href={project.github}
                       target="_blank"
@@ -100,23 +87,23 @@ export default function Projects() {
                     >
                       <Github className="w-6 h-6" />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </motion.div>
             ))}
           </div>
 
-          <div className="text-center mt-16">
+         {/*  <div className="text-center mt-16">
             <a
               href="https://github.com/kokatesaurabh"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 shadow-lg transition-all"
             >
-              <span>View All Projects</span>
+             
               <ExternalLink className="w-5 h-5 ml-2" />
             </a>
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </section>
