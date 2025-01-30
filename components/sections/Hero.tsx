@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Github, Linkedin, Instagram, Facebook, X,  } from "lucide-react";
+import { Github, Linkedin, Instagram, Facebook, X } from "lucide-react";
 import { FaTelegram } from "react-icons/fa";
 
 const Hero = () => {
@@ -15,16 +15,23 @@ const Hero = () => {
     "Géopolitique ",
     "IA ",
     "Blockchain ",
-   
   ];
   const period = 2000;
 
   const socialLinks = [
-
-    { icon: <FaTelegram size={24} />, href: "https://t.me/+rL94lbUQVoU5YTBk", color: "white", outline: true },
-
-    { icon: <X size={24} />, href: "", color: "white" },
-  
+    { 
+      icon: <FaTelegram size={24} />, 
+      href: "https://t.me/+rL94lbUQVoU5YTBk", 
+      color: "white", 
+      outline: true, 
+      label: "Telegram" // Ajouté
+    },
+    { 
+      icon: <X size={24} />, 
+      href: "", 
+      color: "white", 
+      label: "X (Twitter)" // Ajouté
+    },
   ];
 
   useEffect(() => {
@@ -81,12 +88,6 @@ const Hero = () => {
           Axez sur le numérique laissez nous vous diriger vers l'actualité 100%
           authentique et vers des opportunités sans précédents 
         </p>
-        {/* <button
-          onClick={() => console.log("Connect")}
-          className="px-6 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:scale-105 transition-transform"
-        >
-          Let’s Connect
-        </button> */}
         <div className="flex mt-6 space-x-6">
           {socialLinks.map((link, index) => (
             <a
@@ -98,7 +99,7 @@ const Hero = () => {
               style={{
                 color: link.color,
               }}
-              aria-label={link.label}
+              aria-label={link.label} // Utilisation de `label`
             >
               <div
                 className={`absolute inset-0 w-full h-full rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
