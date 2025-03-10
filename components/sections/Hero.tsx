@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Github, Linkedin, Instagram, Facebook, X } from "lucide-react";
-import { FaTelegram } from "react-icons/fa";
+import { FaTelegram,FaInstagramSquare } from "react-icons/fa";
+import { FaSquareXTwitter,FaSnapchat } from "react-icons/fa6";
 
 const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -10,7 +10,6 @@ const Hero = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(150);
   const toRotate = [
-    "Open your eyes ",
     "Monde Digital ",
     "Géopolitique ",
     "IA ",
@@ -27,8 +26,20 @@ const Hero = () => {
       label: "Telegram" 
     },
     { 
-      icon: <X size={24} />, 
-      href: "", 
+      icon: <FaInstagramSquare size={24} />, 
+      href: "https://x.com/iidividu_x", 
+      color: "white", 
+      label: "X (Twitter)" 
+    },
+    { 
+      icon: <FaSnapchat size={24} />, 
+      href: "https://x.com/iidividu_x", 
+      color: "white", 
+      label: "X (Twitter)" 
+    },
+    { 
+      icon: <FaSquareXTwitter  size={24} />, 
+      href: "https://x.com/iidividu_x", 
       color: "white", 
       label: "X (Twitter)" 
     },
@@ -63,7 +74,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-between text-white bg-gradient-to-r from-black via-gray-900 to-black relative overflow-hidden">
+    <section className="min-h-screen flex flex-col md:flex-row items-center justify-between text-white bg-gradient-to-r from-black via-gray-900 to-black relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute h-80 w-80 bg-purple-700 rounded-full blur-3xl opacity-20 animate-pulse"></div>
@@ -72,23 +83,23 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 text-left px-8 md:px-16 w-1/2">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4">
+      <div className="relative z-10 text-center md:text-left px-4 md:px-16 w-full md:w-1/2">
+        <h1 className="text-4xl md:text-7xl font-bold mb-4">
           <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-purple-600 bg-clip-text text-transparent">
-            X_Empire
+            X_vision
           </span>
         </h1>
-        <h2 className="text-2xl md:text-3xl text-gray-200 mb-4">
+        <h2 className="text-xl md:text-3xl text-gray-200 mb-4">
           <span className="inline-block animate-gradient-text">
             {text}
             <span className="text-pink-500 animate-blink">|</span>
           </span>
         </h2>
-        <p className="text-lg text-gray-300 max-w-lg mb-8">
+        <p className="text-base md:text-lg text-gray-300 max-w-lg mb-8 mx-auto md:mx-0">
           Axez sur le numérique laissez nous vous diriger vers l'actualité 100%
           authentique et vers des opportunités sans précédents 
         </p>
-        <div className="flex mt-6 space-x-6">
+        <div className="flex justify-center md:justify-start mt-6 space-x-6">
           {socialLinks.map((link, index) => (
             <a
               key={index}
@@ -126,15 +137,13 @@ const Hero = () => {
       </div>
 
       {/* GIF on the Right */}
-      <div className="w-1/2 flex justify-center pr-8">
-        <div style={{ textAlign: "right" }}> {/* Correction ici */}
-          <img 
-            src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" 
-            alt="Hacker Anime GIF" 
-            width="550"
-            style={{ maxWidth: "100%", height: "auto" }}
-          />
-        </div>
+      <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0 px-4 md:pr-8">
+        <img 
+          src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" 
+          alt="Hacker Anime GIF" 
+          className="max-w-xs md:max-w-full"
+          style={{ height: "auto" }}
+        />
       </div>
     </section>
   );
