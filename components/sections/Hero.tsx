@@ -27,13 +27,13 @@ const Hero = () => {
     },
     { 
       icon: <FaInstagramSquare size={24} />, 
-      href: "https://x.com/iidividu_x", 
+      href: "https://www.instagram.com/x__empiree?igsh=Z2Rub3p2bXFkYXFo", 
       color: "white", 
       label: "X (Twitter)" 
     },
     { 
       icon: <FaSnapchat size={24} />, 
-      href: "https://x.com/iidividu_x", 
+      href: "https://snapchat.com/t/BjlN65ha", 
       color: "white", 
       label: "X (Twitter)" 
     },
